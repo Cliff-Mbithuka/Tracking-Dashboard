@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: #fff;
+    background-color: #0d1323;
+    font-family: Rubik;
+    width: 1440px;
+}
+.container {
+    display: flex;
+    margin: 3em;
+}
+.left-side {
+background-color:  hsl(235, 46%, 20%);
+border-radius: 10px;
+}
+.profile img {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+    margin-bottom: 2em;
+}
+.report-text{
+    font-size: .8em;
+    margin-bottom: 10px;
+}
+.profile {
+    margin-bottom: 20px;
+    background-color:  hsl(235, 45%, 61%);
+    border-radius: 10px; 
+    padding: 20px; 
+}
+.times{
+padding: 20px;
+color: grey;
+margin: 0px;
+}
+.times p.active{
+    margin: 10px;
+   /* color: whitesmoke;*/
+}
+.times p:hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+}
+.name{
+    font-size: 1.5em;
+}
+.right {
+    display: grid;
+    margin-left: 1.5em;
+    border-radius: 10px;
+    flex-grow: 1;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+}
+.work {
+    color: #fff;
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.work-head {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 3em;
+}
+.time {
+    font-size: 2em;
+    padding: 0.5em;
+}
+.space {
+    padding: 1em;
+    font-size: 18px;
+}
+.previous {
+    padding: 1em;
+    color: grey;
+}
+.work::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: -15px; 
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+    transition: top .3s;
+}
+.work:hover::after{
+    top: -30px;
+}
+.work:nth-child(1)::after{
+    background-color: hsl(15, 100%, 70%);
+}
+.work:nth-child(2)::after{
+    background-color: hsl(195, 74%, 62%);
+}
+.work:nth-child(3)::after{
+    background-color: hsl(348, 100%, 68%);
+}
+.work:nth-child(4)::after{
+    background-color: hsl(145, 58%, 55%);
+}
+.work:nth-child(5)::after{
+    background-color: hsl(264, 64%, 52%);
+}
+.work:nth-child(6)::after{
+    background-color: hsl(43, 84%, 65%);
+}
