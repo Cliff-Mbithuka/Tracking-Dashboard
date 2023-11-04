@@ -5,76 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Rubik:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+  <title>time dashboard</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<bo dy>
+  <div class="container">
+    <div class="left-side">
+      <div class="profile">
+       <img src="images/image-jeremy.png" alt="">
+       <p class="report-text">Report for</p>
+       <p class="name">Jeremy<br> Robson</p>
+      </div>
+      <div class="times">
+       <p>Daily</p>
+       <p class="active">Weekly</p>
+       <p>Monthly</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="work">
+        <div class="work-head">
+          <span class="space">Work</span>
+          <span class="space">...</span>
+        </div>
+        <p class="time" id="time">32hrs</p>
+       <p class="previous">Last Week - 36hrs</p>
+      </div>
 
-  Report for
-  Jeremy Robson
+      <div class="work">
+        <div class="work-head">
+          <span class="space">Play</span>
+          <span class="space">...</span>
+        </div>
+        <p class="time" id="time">10hrs</p>
+       <p class="previous">Last Week - 8hrs</p>
+      </div>
 
-  Daily
-  Weekly
-  Monthly
+      <div class="work">
+        <div class="work-head">
+          <span class="space">Study</span>
+          <span class="space">...</span>
+        </div>
+        <p class="time" id="time">4hrs</p>
+       <p class="previous">Last Week - 7hrs</p>
+      </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+      <div class="work">
+        <div class="work-head">
+          <span class="space">Exercise</span>
+          <span class="space">...</span>
+        </div>
+        <p class="time" id="time">4hrs</p>
+       <p class="previous">Last Week - 5hrs</p>
+      </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="work">
+        <div class="work-head">
+          <span class="space">Social</span>
+          <span class="space">...</span>
+        </div>
+        <p class="time" id="time">5hrs</p>
+       <p class="previous">Last Week - 10hrs</p>
+      </div>
+      <div class="work">
+        <div class="work-head">
+          <span class="space">Self care</span>
+          <span class="space">...</span>
+        </div>
+        <p class="time" id="time">2hrs</p>
+       <p class="previous">Last Week - 2hrs</p>
+      </div>
+    </div>
+    </div>
 </body>
 </html>
